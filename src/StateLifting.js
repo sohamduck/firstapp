@@ -1,4 +1,8 @@
-function App() {
+import { useState } from 'react';
+import Fruits from './Fruits';
+import FruitsCounter from './FruitsCounter';
+
+export default function App() {
     //State lifting then prop drilling
     const [fruits] = useState([
       {fruitName: 'apple', id: 1},
@@ -15,4 +19,4 @@ function App() {
         </div>
       </div>
     );
-  }
+}
